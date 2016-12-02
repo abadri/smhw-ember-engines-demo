@@ -7,17 +7,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('teachers', function() {
-    this.route('teacher', { path: '/:teacher_id' }, function() {
-      this.route('class', { path: '/class/:class_group_id' });
-    });
-  });
-  this.route('parents', function() {
-    this.route('parent', { path: '/:parent_id' });
-  });
-  this.route('students', function() {
-    this.route('student', { path: '/:student_id' });
-  });
+  this.mount('teachers-engine', { as: 'teachers' });
+  this.mount('parents-engine', { as: 'parents' });
+  this.mount('students-engine', { as: 'students' });
 });
 
 export default Router;

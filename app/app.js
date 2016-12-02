@@ -10,7 +10,24 @@ Ember.MODEL_FACTORY_INJECTIONS = true;
 App = Ember.Application.extend({
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,
-  Resolver
+  Resolver,
+
+  engines: {
+    teachersEngine: {
+      dependencies: {
+        services: ['store']
+      }
+    },
+    parentsEngine: {
+      dependencies: {
+        services: ['store'],
+        externalRoutes: {
+          'teacher-details': 'teachers.teacher',
+          'teacher-details.class': 'teachers.teacher.class'
+        }
+      }
+    }
+  }
 });
 
 loadInitializers(App, config.modulePrefix);

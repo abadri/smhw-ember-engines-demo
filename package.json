@@ -39,6 +39,7 @@
     "ember-cli-test-loader": "^1.1.0",
     "ember-cli-uglify": "^1.2.0",
     "ember-data": "^2.8.0",
+    "ember-engines": "0.4.0-beta.3",
     "ember-export-application-global": "^1.0.5",
     "ember-font-awesome": "2.2.0",
     "ember-load-initializers": "^0.5.1",
@@ -47,5 +48,12 @@
     "ember-power-select": "1.0.0-beta.29",
     "ember-resolver": "^2.0.3",
     "loader.js": "^4.0.1"
+  },
+  "ember-addon": {
+    "paths": [
+      "lib/parents-engine",
+      "lib/students-engine",
+      "lib/teachers-engine"
+    ]
   }
 }

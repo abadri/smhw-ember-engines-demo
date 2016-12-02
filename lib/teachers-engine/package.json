@@ -1,0 +1,11 @@
+{
+  "name": "teachers-engine",
+  "keywords": [
+    "ember-addon",
+    "ember-engine"
+  ],
+  "dependencies": {
+    "ember-cli-htmlbars": "*",
+    "ember-power-select": "1.0.0-beta.29"
+  }
+}

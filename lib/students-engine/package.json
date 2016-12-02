@@ -1,0 +1,10 @@
+{
+  "name": "students-engine",
+  "keywords": [
+    "ember-addon",
+    "ember-engine"
+  ],
+  "dependencies": {
+    "ember-cli-htmlbars": "*"
+  }
+}

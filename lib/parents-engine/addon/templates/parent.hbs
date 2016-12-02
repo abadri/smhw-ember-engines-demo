@@ -1,0 +1,14 @@
+<div class="boxes-list">
+  {{#each model.meetings as |meeting|}}
+    <div class="boxes-list-item red-box">
+      <strong>{{meeting.name}}</strong> with
+      <strong>
+        {{#link-to-external 'teacher-details' meeting.teacher}}{{meeting.teacher.name}}{{/link-to-external}}
+      </strong>
+      at
+      <strong>
+        {{#link-to-external 'teacher-details.class' meeting.teacher meeting.classGroup}}{{meeting.classGroup.name}}{{/link-to-external}}
+      </strong>
+    </div>
+  {{/each}}
+</div>
