@@ -1,10 +1,1 @@
-{
-  "name": "smhw-blog",
-  "dependencies": {
-    "ember": "~2.10.0-beta.3",
-    "ember-cli-shims": "0.1.1",
-    "bootstrap": "~3.3.5",
-    "font-awesome": "~4.5.0",
-    "Faker": "^3.1.0"
-  }
-}
+{"name":"smhw-blog","dependencies":{"ember":"~2.10.0-beta.3","ember-cli-shims":"0.1.1","font-awesome":"~4.5.0","Faker":"^3.1.0"}}

@@ -1,7 +1,10 @@
-import Ember from 'ember';
+import Route from '@ember/routing/route';
+import { inject as service } from '@ember/service';
 
-export default Ember.Route.extend({
+export default Route.extend({
+  store: service('store'),
+
   model() {
-    return this.store.findAll('parent');
+    return this.get('store').findAll('parent');
   }
 });
